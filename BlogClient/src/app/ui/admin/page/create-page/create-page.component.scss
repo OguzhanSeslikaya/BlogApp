@@ -1,0 +1,17 @@
+#editor{
+    width: 100%;
+}
+
+button{
+    outline: none; 
+    padding: 12px;
+    font-size: 20px;
+    background-color: #d3d3d3;
+    cursor: grab; 
+    border-radius: 8px;
+    transition: 1s;
+}
+button:hover{
+    background-color: rgb(239, 239, 239);
+    
+}

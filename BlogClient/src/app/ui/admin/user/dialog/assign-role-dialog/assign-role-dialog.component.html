@@ -1,0 +1,18 @@
+<div style="display: flex;justify-content: space-between;">
+    <h2 mat-dialog-title>Permissions</h2>
+    <button mat-button mat-dialog-close ><i style="font-size: 25px;" class="bi bi-x"></i></button>
+  </div>
+  <mat-dialog-content class="mat-typography">
+    
+      <form [formGroup]="roleForm" *ngIf="request">
+        <div *ngFor="let i of request.roles" >
+          <input (change)="resultDoldur()" type="radio" formControlName="role" id="{{i.name}}" name="role" value="{{i.name}}" /> <label for="{{i.name}}">{{i.name}}</label>
+        </div>
+      </form>
+  
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="result" cdkFocusInitial>Assign</button>
+  </mat-dialog-actions>
+  

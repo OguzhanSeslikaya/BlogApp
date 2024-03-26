@@ -1,0 +1,10 @@
+<div class="form-box">
+    <form [formGroup]="rolForm">
+    <div class="input-box">
+        <input type="text" id="name" placeholder="Role Name" formControlName="rolName">
+    </div>
+    <div class="submit-box">
+        <button type="submit" (click)="rolOlustur()">Create Role</button>
+    </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<main class="main">
+    <div class="search"><form [formGroup]="searchForm">
+        <div class="searchDiv">
+            <input type="text" id="searched" formControlName="ara">
+            <button (click)="search()">Search</button>
+        </div>
+    </form></div>
+    <div class="grid-container">
+        <article  *ngFor="let i of banners">
+            <div class="card" (click)="sayfayaGir(i.pageTitle,i.pageId)">
+            <div class="card-img">
+                <img [src]="i.bannerImageNameLink" [alt]="i.bannerImageAlt">
+            </div>
+            <div class="card-title">
+                <h2 style="font-size: 17px;">{{i.bannerTitle}}</h2>
+            </div>
+        </div>
+        <div *ngIf="authService.hasRole" class="delete"><button (click)="sayfayiSil(i.bannerId,i.pageId,$event)">Delete</button></div>
+        </article>
+    </div>
+    <div class="pagination">
+        <button type="button" (click)="sayfaDegis(false)"><i class="arrow-left"></i></button>
+
+        <div>{{page}} / {{totalPage}}</div>
+        
+        <button type="button" (click)="sayfaDegis(true)"><i class="arrow-right"></i></button>
+        
+    </div>
+</main>

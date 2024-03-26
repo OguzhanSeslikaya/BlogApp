@@ -1,0 +1,29 @@
+<nav>
+  <div class="nav-container">
+    <div class="navbar-left">
+      <a routerLink="home"><img src="../assets/navbar/home-icon.png" style="width: 40px;" alt=""/></a>
+    </div>
+    <div class="navbar-right">
+    <div class="dropdown" id="dr">
+      <img src="../assets/navbar/person.svg" alt=""/>
+      <div class="dropdown-content" id="dcr">
+        <a routerLink="log-in" *ngIf="!authService.isAuthenticated">Giriş Yap</a>
+        <a routerLink="sign-in" *ngIf="!authService.isAuthenticated">Kayıt Ol</a>
+        <a routerLink="admin" *ngIf="authService.hasRole">Admin</a>
+        <a (click)="signOut()" class="signOut" style="cursor: pointer;color: red;" *ngIf="authService.isAuthenticated" >Çıkış yap</a>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+  
+    <router-outlet></router-outlet>
+  
+
+<footer>
+  <p>footer</p>
+</footer>
+
+<ngx-spinner type="cog" name="spinner1"></ngx-spinner>
+<ngx-spinner type="ball-newton-cradle" name="spinner2"></ngx-spinner>

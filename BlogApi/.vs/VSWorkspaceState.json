@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Api",
+    "\\Application\\CQRS",
+    "\\Application\\CQRS\\Queries",
+    "\\Application\\CQRS\\Queries\\Page",
+    "\\Application\\CQRS\\Queries\\Page\\GetSearchedPages"
+  ],
+  "SelectedNode": "\\Api\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,53 @@
+@media screen and (min-width: 0px) {
+    .guide-container{
+        width: 300px;
+        margin: auto;
+        min-height: 400px;
+        padding-bottom: 30px;
+    }
+    .grid-1{
+        display: none;
+        p{
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+    .grid-3{
+        p{
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+    .sun-editor-editable{
+        background: transparent;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .guide-container{
+        width: 380px;
+        margin: auto;
+        min-height: 400px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .guide-container{
+        width: 600px;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .guide-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .grid-1{
+        display: block;
+    }
+}

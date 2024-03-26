@@ -1,0 +1,30 @@
+<main>
+<div class="grid-container">
+    <div class="menu">
+        <button type="button" id="page-actions">Page actions<i class="bi bi-list"></i></button>
+        <div class="dropdown" id="dropdown-page-actions">
+            <a routerLink="page-actions/create-page">Create Page</a>
+            <div class="dropdown-end"></div>
+        </div>
+        <button type="button" id="role-actions">Role actions<i class="bi bi-list"></i></button>
+        <div class="dropdown" id="dropdown-role-actions">
+            <a routerLink="role-actions/create-role">Create Role</a>
+            <a routerLink="role-actions/list-roles">List Roles</a>
+            <div class="dropdown-end"></div>
+        </div>
+        <button type="button" id="user-actions">User actions<i class="bi bi-list"></i></button>
+        <div class="dropdown" id="dropdown-user-actions">
+            <a routerLink="user-actions/list-users">List users</a>
+            <div class="dropdown-end"></div>
+        </div>
+    </div>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="menu2">
+        
+    </div>
+</div>
+</main>

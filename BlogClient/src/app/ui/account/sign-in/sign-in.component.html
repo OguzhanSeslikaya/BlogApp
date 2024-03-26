@@ -1,0 +1,19 @@
+<div class="form-box">
+    <form [formGroup]="kayitForm">
+      <h2>Kayıt Ol</h2>
+  
+      <div class="input-box">
+        <label for="bir">Kullanıcı Adı</label>
+        <input type="text" name="" id="bir" formControlName="kullaniciAdi"/>
+      </div>
+  
+      <div class="input-box">
+        <label for="iki">parola</label>
+        <input type="password" name="" id="iki" formControlName="parola"/>
+      </div>
+  
+      <div class="submit-box">
+        <button type="button" (click)="kayit()">Kayıt Ol</button>
+      </div>
+    </form>
+  </div>

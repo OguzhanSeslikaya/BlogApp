@@ -1,0 +1,14 @@
+<table class="roles">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Permissions</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let i of roles">
+        <td id="id">{{i.id}}</td>
+        <td id="name">{{i.name}}</td>
+        <td><i class="bi bi-pencil-square" (click)="openDialog(i.id)"></i></td>
+        <td><i class="bi bi-trash3" appDeleteRole="roles" (newRoles)="yeniRolListesi() "></i></td>
+    </tr>
+</table>
